@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './index.css';
 import App from './App';
+import Ecommerce from './Pages/Ecommerce';
 import Layout from './Pages/Layout';
 import Home from './Pages/Home';
 import reportWebVitals from './reportWebVitals';
@@ -10,14 +11,15 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
+    <Ecommerce />
 
-    <BrowserRouter>
+    {/* <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route path='Home' element={<Home />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </BrowserRouter> */}
   </React.StrictMode>
 );
 
