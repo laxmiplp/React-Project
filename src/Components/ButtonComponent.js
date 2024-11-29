@@ -1,9 +1,12 @@
 import { Button } from '@mui/material';
 
-const ButtonComponent = () => {
+const ButtonComponent = (
+    { color, variant, disabled, size, fullWidth, children, onClick, type, onSubmit }
+) => {
     return (
         <>
-            <Button variant="contained">Hello, MUI Component!</Button>
+            <Button variant={variant} color={color} disabled={disabled} size={size} fullWidth={fullWidth} onClick={onClick} type={type} onSubmit={onSubmit}
+            >{children}</Button>
 
         </>
     )
